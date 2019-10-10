@@ -25,6 +25,7 @@
     "react": "^16.10.2",
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.10.2",
+    "react-icons": "^3.7.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-moraga": "^0.16.19"
