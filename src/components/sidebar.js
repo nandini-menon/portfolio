@@ -11,9 +11,26 @@ class Sidebar extends React.Component {
         event.preventDefault();
     }
 
+    constructor (props) {
+        super(props)
+        this.state = {
+            menuOpen: true
+        }
+    }
+
+    handleStateChange (state) {
+        this.setState({menuOpen: state.isOpen})
+    }
+
+    closeMenu () {
+        this.setState({menuOpen: false})
+    }
+
     render () {
         return (
-            <Menu width={ '20vw' } isOpen noOverlay css = {{ textAlign: `center` }}>
+            // <Menu width = { '20vw' } isOpen = {this.state.menuOpen}
+            <Menu isOpen = {this.state.menuOpen}
+            onStateChange={(state) => this.handleStateChange(state)} noOverlay css = {{ textAlign: `center` }}>
                 <Image />
                 <Link to={`/`}>
                     <h2 css = {{ color: '#ffffff' }} >

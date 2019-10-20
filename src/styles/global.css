@@ -7,46 +7,36 @@ a {
 }
 
 .bm-burger-button {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
+    width: 18px;
+    height: 15px;
+    left: 18px;
+    top: 18px;
 }
 
-/* Color/shape of burger icon bars */
 .bm-burger-bars {
     background: #373a47;
 }
 
-/* Color/shape of burger icon bars on hover*/
-/* .bm-burger-bars-hover {
-    background: #a90000;
-} */
-
-/* Position and sizing of clickable cross button */
 .bm-cross-button {
     visibility: hidden;
-    height: 24px;
-    width: 24px;
+    height: 12px;
+    width: 12px;
+    color: #c0c0c0;
 }
 
-/* Color/shape of close button cross */
 .bm-cross {
     background: #bdc3c7;
 }
 
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
 .bm-menu-wrap {
     position: fixed;
     /* position: 0 !important; */
     top: 0 !important;
     min-height: 100vh;
     align-content: center;
+    width: 20vw;
 }
 
 /* General sidebar styles */
@@ -57,6 +47,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     padding: 1.5em 1.5em 0;
     font-size: 1.15em;
     align-content: center;
+    width: 20vw;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -80,6 +71,26 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+    .bm-burger-button {
+        visibility: visible;
+        color: #c0c0c0;
+    }
+    .bm-menu {
+        width: 80vw !important;
+    }
+    .bm-menu-wrap {
+        /* visibility: hidden; */
+        width: 80vw !important;
+    }
+    .bm-overlay {
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .bm-cross-button {
+        visibility: visible !important;
+    }
 }
 
 img {
@@ -158,5 +169,8 @@ img {
         display: block !important;
         max-width: 75vw !important;
         background-color: #0c091d;
+    }
+    .css-10u7c63 {
+        margin-left: 0 !important;
     }
 }
