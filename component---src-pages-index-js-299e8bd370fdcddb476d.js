@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{240:function(n,t,e){"use strict";e.r(t);var l=e(33),o=e(2),a=(e(1),e(234));t.default=function(){return Object(o.b)(a.a,null,Object(o.b)("div",{css:Object(l.a)({marginLeft:"10vw",position:"absolute",top:"50%",left:"50%",transform:"translate(-50%, -50%)",textAlign:"center"})},Object(o.b)("h3",null,"Hello World!!"),Object(o.b)("h1",null,"I'm Nandini Menon")))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-299e8bd370fdcddb476d.js.map

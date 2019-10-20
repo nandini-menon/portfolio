@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{238:function(e,n,s){"use strict";s.r(n);var t=s(2),c=(s(1),s(235)),b=s(234),a={name:"1baulvz",styles:"display:inline-block;"};n.default=function(){return Object(t.b)(b.a,null,Object(t.b)("h1",{css:a},"My Achievements"),Object(t.b)("p",{css:Object(t.a)("font-size:",Object(c.a)(.75),";")},"Updating soon!!"))}}}]);
+//# sourceMappingURL=component---src-pages-achievements-js-5c15c0addc1dfbe2c7fc.js.map
