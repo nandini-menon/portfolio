@@ -25,7 +25,7 @@ export default () => (
             <div
                 css={css`
                     display: inline-block;
-                    float: left;
+                    // float: left;
                     left: 0;
                     margin-left: auto;
                     margin-right: auto;
@@ -38,7 +38,7 @@ export default () => (
             <div
                 css={css`
                     display: inline-block;
-                    float: right;
+                    // float: right;
                     right: 0;
                     margin-left: auto;
                     margin-right: auto;
@@ -54,7 +54,7 @@ export default () => (
             <div
                 css={css`
                     display: inline-block;
-                    float: left;
+                    // float: left;
                     left: 0;
                     margin-left: auto;
                     margin-right: auto;
@@ -67,7 +67,7 @@ export default () => (
             <div
                 css={css`
                     display: inline-block;
-                    float: right;
+                    // float: right;
                     right: 0;
                     margin-left: auto;
                     margin-right: auto;

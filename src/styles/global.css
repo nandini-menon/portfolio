@@ -91,6 +91,11 @@ a {
     .bm-cross-button {
         visibility: visible !important;
     }
+
+    .card {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 img {
@@ -102,6 +107,8 @@ img {
     display: block;
     box-shadow: 10px 5px 40px 20px #ededed;
     transition: .25s;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .card:hover {
     box-shadow: 10px 5px 40px 20px #dcdcdc;
