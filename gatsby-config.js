@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Hello World!!`,
   },
+  pathPrefix: "/portfolio",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
