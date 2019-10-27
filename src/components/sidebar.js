@@ -21,6 +21,7 @@ class Sidebar extends React.Component {
             this.state = {
                 menuOpen: true,
             }
+            console.log(this.state.menuOpen);
         } else {
             this.state = {
                 menuOpen: false,
