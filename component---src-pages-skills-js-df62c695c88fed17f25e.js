@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{244:function(n,s,e){"use strict";e.r(s);var t=e(2),c=(e(1),e(238)),b=e(237),a={name:"1baulvz",styles:"display:inline-block;"};s.default=function(){return Object(t.b)(b.a,null,Object(t.b)("h1",{css:a},"My Skills"),Object(t.b)("p",{css:Object(t.a)("font-size:",Object(c.a)(.75),";")},"Updating soon!!"))}}}]);
+//# sourceMappingURL=component---src-pages-skills-js-df62c695c88fed17f25e.js.map
