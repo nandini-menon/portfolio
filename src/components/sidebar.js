@@ -15,6 +15,7 @@ class Sidebar extends React.Component {
     constructor (props) {
         super(props);
         let width = window.innerWidth;
+        console.log(width);
         if (width > 992) {
             this.state = {
                 menuOpen: true,
