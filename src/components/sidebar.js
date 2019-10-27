@@ -40,7 +40,7 @@ class Sidebar extends React.Component {
     render () {
         return (
 
-            <div style = {this.state.menuOpen ? {} : {visibility: `hidden`}}>
+            <div style = {this.state.menuOpen ? {visibility: `visible`} : {visibility: `hidden`}}>
                 <Menu isOpen = {this.state.menuOpen}
                 onStateChange={(state) => this.handleStateChange(state)} css = {{ textAlign: `center` }}>
                     <Image />
