@@ -27,7 +27,7 @@ a {
 }
 
 .bm-cross {
-    background: #bdc3c7;
+    background: #ffffff;
 }
 
 .bm-menu-wrap {
@@ -70,12 +70,15 @@ a {
 
 /* Styling of overlay */
 .bm-overlay {
+    visibility: hidden;
+    top: 0;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 767px) {
     .bm-burger-button {
-        visibility: visible;
+        visibility: visible !important;
         color: #c0c0c0;
     }
     .bm-menu {
@@ -86,7 +89,7 @@ a {
         width: 80vw !important;
     }
     .bm-overlay {
-        background: rgba(0, 0, 0, 0.3);
+        visibility: visible;
     }
     .bm-cross-button {
         visibility: visible !important;
@@ -95,6 +98,27 @@ a {
     .card {
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .bm-menu {
+        width: 40vw !important;
+    }
+    .bm-menu-wrap {
+        width: 40vw !important;
+    }
+    .bm-cross-button {
+        visibility: visible !important;
+    }
+    .bm-burger-button {
+        visibility: visible !important;
+    }
+    .bm-overlay {
+        visibility: visible;
+    }
+    .css-10u7c63 {
+        margin-left: 0 !important;
     }
 }
 
