@@ -5,6 +5,7 @@ import { MdMail } from 'react-icons/md'
 import { GoMarkGithub } from 'react-icons/go'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { stack as Menu } from 'react-burger-menu'
+import { window } from 'browser-monads';
 
 class Sidebar extends React.Component {
     showSettings (event) {
