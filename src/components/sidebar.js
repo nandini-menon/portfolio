@@ -7,6 +7,9 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { stack as Menu } from 'react-burger-menu'
 import { window } from 'browser-monads';
 
+
+const mql = window.matchMedia('(max-width: 992px)');
+
 class Sidebar extends React.Component {
     showSettings (event) {
         event.preventDefault();
@@ -14,8 +17,15 @@ class Sidebar extends React.Component {
 
     constructor (props) {
         super(props);
-        this.state = {
-            menuOpen: true,
+        let mobileView = mql.matches;
+        if (mobileView) {
+            this.state = {
+                menuOpen: false,
+            };
+        } else {
+            this.state = {
+                menuOpen: true,
+            };
         }
     }
 
@@ -54,7 +64,7 @@ class Sidebar extends React.Component {
                             <strong>Nandini Menon</strong>
                         </h2>
                     </Link>
-                    <h4 css={{color:`#ffffff`}}>PASSIONATE LEARNER | FRONT-END WEB DEVELOPER | ROBOTICS & MACHINE LEARNING ENTHUSIAST</h4>
+                    <h4 css={{color:`#ffffff`}}>AVID LEARNER | FRONT-END DEVELOPER | MACHINE LEARNING ENTHUSIAST</h4>
                     <ul
                         css = {{
                             display: 'block',
