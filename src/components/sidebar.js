@@ -14,24 +14,29 @@ class Sidebar extends React.Component {
 
     constructor (props) {
         super(props);
-        let width = window.innerWidth;
-        console.log(width);
-        if (width > 992) {
-            console.log("Here");
-            this.state = {
-                menuOpen: true,
-            }
-            console.log(this.state.menuOpen);
-        } else {
-            this.state = {
-                menuOpen: false,
-            }
+        this.state = {
+            menuOpen: true,
         }
+    }
+
+    /* Code to not show Sidenav immediately on small screens - starts here */
+    handleScreenSize = () => this.setState({menuOpen: false});
+
+    componentDidMount() {
+        if (window.innerWidth < 992) {
+            this.handleScreenSize();
+            window.addEventListener('resize', this.handleScreenSize)
+        }
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleScreenSize)
     }
 
     handleStateChange (state) {
         this.setState({menuOpen: state.isOpen})
     }
+    /* Code to not show Sidenav immediately on small screens - ends here */
 
     closeMenu () {
         this.setState({menuOpen: false})
