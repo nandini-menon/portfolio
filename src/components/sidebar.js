@@ -29,27 +29,6 @@ class Sidebar extends React.Component {
         }
     }
 
-    /* Code to not show Sidenav immediately on small screens - starts here */
-    /*
-    handleScreenSize = () => this.setState({menuOpen: false});
-
-    componentDidMount() {
-        if (window.innerWidth < 992) {
-            this.handleScreenSize();
-            window.addEventListener('resize', this.handleScreenSize)
-        }
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.handleScreenSize)
-    }
-
-    handleStateChange (state) {
-        this.setState({menuOpen: state.isOpen})
-    }
-    */
-    /* Code to not show Sidenav immediately on small screens - ends here */
-
     closeMenu () {
         this.setState({menuOpen: false})
     }
