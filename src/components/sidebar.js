@@ -22,14 +22,18 @@ class Sidebar extends React.Component {
             this.state = {
                 menuOpen: false,
             };
+            console.log('Mobile View')
         } else {
             this.state = {
                 menuOpen: true,
             };
+            console.log('Desktop View')
         }
     }
 
     closeMenu () {
+        console.log('closeMenu() func')
+        console.log('menu state: ', menuOpen)
         this.setState({menuOpen: false})
     }
 
