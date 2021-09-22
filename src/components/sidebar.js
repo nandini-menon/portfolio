@@ -17,18 +17,22 @@ class Sidebar extends React.Component {
 
     constructor (props) {
         super(props);
-        let mobileView = mql.matches;
-        if (mobileView) {
-            this.state = {
-                menuOpen: false,
-            };
-            console.log('Mobile View')
-        } else {
-            this.state = {
-                menuOpen: true,
-            };
-            console.log('Desktop View')
-        }
+        this.state = {
+            menuOpen: true,
+        };
+        // let mobileView = mql.matches;
+        // if (mobileView) {
+        //     this.state = {
+        //         menuOpen: false,
+        //     };
+        //     console.log('Mobile View')
+        // } else {
+        //     this.state = {
+        //         menuOpen: true,
+        //     };
+        //     console.log('Desktop View')
+        //     console.log('menu state: ', menuOpen)
+        // }
     }
 
     closeMenu () {
