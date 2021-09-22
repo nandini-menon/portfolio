@@ -36,8 +36,6 @@ class Sidebar extends React.Component {
     }
 
     closeMenu () {
-        console.log('closeMenu() func')
-        console.log('menu state: ', menuOpen)
         this.setState({menuOpen: false})
     }
 
